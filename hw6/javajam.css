@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("fadedroad50.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #221811;
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+img {
+  padding: 0 10px;
+}
+/* headings */
+h1 {
+  font-size: 3em;
+}
+h1,
+h2,
+h3,
+dt {
+  color: #8c3826;
+}
+h4 {
+  background-color: #d2b48c;
+  font-size: 1.2em;
+  padding: 0 0 0 0.5em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  clear: left;
+}
+/* main */
+main {
+  padding: 0 0 2em 0;
+  margin-left: 200px;
+  background-color: #fef6c2;
+  display: block;
+  overflow: auto;
+}
+main h2,
+main h3,
+main h4,
+main p,
+main div,
+main ul,
+main dl {
+  padding-left: 3em;
+  padding-right: 2em;
+}
+/* header*/
+header {
+  background-image: url("coffeelogo.jpg");
+  background-repeat: no-repeat;
+  background-color: #d2b48c;
+  padding: 5px 0 5px 240px;
+  color: #231814;
+}
+  header a {
+    text-decoration: none;
+  }
+  header a:link {
+    color: #231814;
+  }
+  header a:visited {
+    color: #231814;
+  }
+  header a:hover {
+    color: #fef6c2;
+  }
+/* footer */
+footer {
+  background-color: #d2b48c;
+  font-size: 0.6em;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+  border-top: 2px solid #8c3826;
+}
+/* nav */
+nav {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 5px 0;
+  float: left;
+  width: 200px;
+}
+  nav ul {
+    list-style-type: none;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav a:link {
+    color: #fef6c2;
+  }
+  nav a:visited {
+    color: #d2b48c;
+  }
+  nav a:hover {
+    color: #cc9933;
+  }
+/* custom */
+#wrapper {
+  background-color: #231814;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  min-width: 900px;
+  max-width: 1280px;
+  box-shadow: 0.3em 0.3em 1em rgba(87, 76, 76, 0.838);
+}
+#homehero {
+  height: 300px;
+  background-image: url("hero.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#heromugs {
+  height: 300px;
+  background-image: url("heromugs.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#heroguitar {
+  height: 300px;
+  background-image: url("heroguitar.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.floatleft {
+  float: left;
+  padding: 0 2em 2em 0;
+}
+  .floatleft img {
+    height: 80px;
+    width: 80px;
+  }
+.details {
+  padding: 0 20%;
+  overflow: auto;
+}
+.details a {
+  text-decoration: none;
+}
+.onethird {
+  float: left;
+  width: 33%;
+}
