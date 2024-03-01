@@ -200,3 +200,46 @@ nav a:hover {
   float: left;
   width: 33%;
 } */
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  h4{
+    margin: 0 10%;
+  }
+  header {
+    text-align: center;
+    padding-left: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around; /* Distribute items with equal space around them */
+  }
+  nav li {
+    border-bottom: none;
+  }
+  #homehero {
+    height           : 50vh;
+    background-image : url("hero.jpg");
+  }
+  #heromugs {
+    background-image : url("heromugs.jpg");
+  }
+  #heroguitar {
+    background-image : url("heroguitar.jpg");
+  }
+  #flow,
+  .details {
+    display: flex;
+    flex-direction: row;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: inline;
+  }
+}
