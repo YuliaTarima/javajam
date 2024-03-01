@@ -56,12 +56,12 @@
     </div>
     <script>
       function isMobileBrowser() {
-         // Mobile browser if supports touch events
+        // If not mobile browser (no support for touch events)
+        // treat as desktop browser independent of screen size
          if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
            document.getElementById('mobile').style.display = 'none';
            document.getElementById('desktop').style.display = 'inline';
          }
-         // else treat as desktop browser independent of size
          return;
        }
      </script>
