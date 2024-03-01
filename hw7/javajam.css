@@ -3,10 +3,6 @@
 }
 
 body {
-  /* background-image: url("fadedroad50.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
   margin     : 0;
   background : #d2b48c;
   color      : #221811;
@@ -17,7 +13,6 @@ img {
   padding: 0 10px;
 }
 
-/* headings */
 h1 {
   font-size: 2em;
 }
@@ -38,12 +33,9 @@ h4 {
   clear           : left;
 }
 
-/* main */
 main {
   background-color: #fef6c2;
   display         : block;
-  /* overflow     : auto;
-  margin-left     : 200px; */
   padding         : 0 0 2em 0;
 }
 
@@ -61,7 +53,6 @@ main ul {
   padding-left: 2em;
 }
 
-/* header*/
 header {
   background-image : url("cup.jpg");
   height           : 128px;
@@ -87,7 +78,6 @@ header a:hover {
   color: #fef6c2;
 }
 
-/* footer */
 footer {
   background-color: #d2b48c;
   font-size       : 0.6em;
@@ -97,14 +87,10 @@ footer {
   border-top      : 2px solid #8c3826;
 }
 
-/* nav */
 nav {
   text-align    : center;
   font-size     : 1.5em;
-  /* font-weight: bold;
-  padding       : 5px 0;
-  float         : left;
-  width         : 200px; */
+
 }
 
 nav ul {
@@ -138,16 +124,11 @@ nav a:hover {
   color: #cc9933;
 }
 
-/* custom */
+
 #wrapper {
   background-color: #231814;
   padding         : 0;
-  /* margin-left  : auto;
-  margin-right    : auto;
-  width           : 80%;
-  min-width       : 900px;
-  max-width       : 1280px;
-  box-shadow      : 0.3em 0.3em 1em rgba(87, 76, 76, 0.838); */
+
 }
 
 #homehero {
@@ -179,14 +160,7 @@ nav a:hover {
   display: none;
 }
 
-/* .floatleft {
-  float: left;
-  padding: 0 2em 2em 0;
-}
- .floatleft img {
-  height: 80px;
-  width: 80px;
-}*/
+
 .details {
   padding : 0 20%;
   overflow: auto;
@@ -195,11 +169,6 @@ nav a:hover {
 .details a {
   text-decoration: none;
 }
-
-/* .onethird {
-  float: left;
-  width: 33%;
-} */
 
 @media screen and (min-width: 600px) {
   h1 {
@@ -241,5 +210,33 @@ nav a:hover {
   }
   #desktop {
     display: inline;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+  #wrapper {
+    display: grid;
+    grid-template:
+    "header header"
+    "nav main"
+    "footer footer"
+    / 200px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  header {
+    background-image : url("coffeelogo.jpg");
   }
 }

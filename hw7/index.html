@@ -6,7 +6,7 @@
     <title>JavaJam Coffee Bar</title>
     <link href="javajam.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="isMobileBrowser()">
     <div id="wrapper">
       <header>
         <h1><a href="index.html">JavaJam Coffee Bar</a></h1>
@@ -54,5 +54,16 @@
         coffeebar@javajam.com
       </footer>
     </div>
+    <script>
+      function isMobileBrowser() {
+         // Mobile browser if supports touch events
+         if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
+           document.getElementById('mobile').style.display = 'none';
+           document.getElementById('desktop').style.display = 'inline';
+         }
+         // else treat as desktop browser independent of size
+         return;
+       }
+     </script>
   </body>
 </html>
