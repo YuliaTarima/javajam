@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin     : 0;
+  background : #d2b48c;
+  color      : #221811;
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+
+img {
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3,
+dt {
+  color: #8c3826;
+}
+
+h4 {
+  background-color: #d2b48c;
+  font-size       : 1.2em;
+  padding         : 0 0 0 0.5em;
+  text-transform  : uppercase;
+  border-bottom   : 1px solid #000000;
+  clear           : left;
+}
+
+main {
+  background-color: #fef6c2;
+  display         : block;
+  padding         : 0 0 2em 0;
+}
+
+main h2,
+main h3,
+main h4,
+main p,
+main div,
+main ul,
+main dl {
+  padding: 0 1em;
+}
+
+main ul {
+  padding-left: 2em;
+}
+
+header {
+  background-image : url("cup.jpg");
+  height           : 128px;
+  background-repeat: no-repeat;
+  background-color : #d2b48c;
+  padding          : 5px 0 5px 105px;
+  color            : #231814;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:link {
+  color: #231814;
+}
+
+header a:visited {
+  color: #231814;
+}
+
+header a:hover {
+  color: #fef6c2;
+}
+
+footer {
+  background-color: #d2b48c;
+  font-size       : 0.6em;
+  font-style      : italic;
+  text-align      : center;
+  padding         : 1em;
+  border-top      : 2px solid #8c3826;
+}
+
+nav {
+  text-align    : center;
+  font-size     : 1.5em;
+
+}
+
+nav ul {
+  list-style-type: none;
+  display        : flex;
+  flex-direction : column;
+  margin         : 0;
+  padding        : 0;
+  font-size      : 1.25em;
+}
+
+nav li {
+  padding      : 0.5em 1em;
+  width        : 100%;
+  border-bottom: 1px solid #fef6c2;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #fef6c2;
+}
+
+nav a:visited {
+  color: #d2b48c;
+}
+
+nav a:hover {
+  color: #cc9933;
+}
+
+
+#wrapper {
+  background-color: #231814;
+  padding         : 0;
+
+}
+
+#homehero {
+  height           : 300px;
+  background-image : url("road.jpg");
+  background-size  : 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#heromugs {
+  height           : 300px;
+  background-image : url("threemugs.jpg");
+  background-size  : 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#heroguitar {
+  height           : 300px;
+  background-image : url("guitar.jpg");
+  background-size  : 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#mobile {
+  display: inline;
+}
+
+#desktop {
+  display: none;
+}
+
+
+.details {
+  padding : 0 20%;
+  overflow: auto;
+}
+
+.details a {
+  text-decoration: none;
+}
+
+/* Center the table and set its width to 90% */
+table {
+  margin: 0 auto; /* Center the table */
+  width: 90%;     /* Set table width to 90% */
+  border-collapse: collapse; /* Remove border spacing */
+}
+
+/* Apply padding to table cells */
+td, th {
+  padding: 10px; /* 10 pixels of padding */
+}
+
+/* Apply background color to alternate rows */
+tr:nth-of-type(odd) {
+  background-color: #D2B48E; /* Background color for odd rows */
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  h4{
+    margin: 0 10%;
+  }
+  header {
+    text-align: center;
+    padding-left: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around; /* Distribute items with equal space around them */
+  }
+  nav li {
+    border-bottom: none;
+  }
+  #homehero {
+    height           : 50vh;
+    background-image : url("hero.jpg");
+  }
+  #heromugs {
+    background-image : url("heromugs.jpg");
+  }
+  #heroguitar {
+    background-image : url("heroguitar.jpg");
+  }
+  #flow,
+  .details {
+    display: flex;
+    flex-direction: row;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+  #wrapper {
+    display: grid;
+    grid-template:
+    "header header"
+    "nav main"
+    "footer footer"
+    / 200px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  header {
+    background-image : url("coffeelogo.jpg");
+  }
+}
