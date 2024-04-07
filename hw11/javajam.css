@@ -199,6 +199,39 @@ textarea {
   margin-bottom: 0.5em;
 }
 
+/* chrome workaround for square borders on audio element */
+.audioContainer {
+  display: block;
+  margin: 1em 0 0 0;
+  padding: 0;
+  height: min-content;
+  background-color: #000000;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+audio {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  height: 40px;
+}
+
+@-moz-document url-prefix() {
+  /* filter workaround for Firefox*/
+  audio {
+    filter: invert(0%);
+    -webkit-filter: invert(0%);
+  }
+}
+
 /***************Phone viewport*****************/
 @media screen and (min-width: 600px) {
   h1 {
