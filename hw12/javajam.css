@@ -143,10 +143,16 @@ nav a:hover {
 #herojobs {
   background-image: url("coffeecup.jpg");
 }
+
+#herocouch {
+  background-image: url('herocouch.jpg');
+}
+
 #homehero,
 #heromugs,
 #heroguitar,
-#herojobs {
+#herojobs,
+#herocouch {
   height: 300px; /* Set the height to 300 pixels */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-size: 100% 100%; /* Set the background size to cover the entire element */
@@ -230,6 +236,18 @@ audio {
     filter: invert(0%);
     -webkit-filter: invert(0%);
   }
+}
+
+/* sale items */
+.item {
+  background-color: #FAF9F7;
+  margin: 1em;
+  padding: 1em;
+  overflow: auto;
+}
+
+.item img {
+  float: right;
 }
 
 /***************Phone viewport*****************/
